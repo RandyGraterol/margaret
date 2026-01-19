@@ -1,0 +1,40 @@
+.registro {
+    width:20rem; /* Limita el ancho para mejor apariencia */
+    margin: 20px auto; /* Centra el formulario */
+    padding: 20px; /* Espacio interno */
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo claro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    font-family: Arial, sans-serif; /* Fuente legible */
+}
+
+.registro label {
+    display: block; /* Hace que los labels ocupen toda la línea */
+    margin-bottom: 5px; /* Espacio entre label e input */
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color oscuro para contraste */
+}
+
+.registro input,
+.registro select {
+    width: 100%; /* Ocupa todo el ancho     disponible */
+    padding: 10px; /* Espacio interno */
+    margin-bottom: 15px; /* Espacio entre campos */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+    font-size: 16px; /* Tamaño de fuente accesible */
+}
+
+.registro input:focus,
+.registro select:focus {
+    border-color: #007bff; /* Borde azul al enfocar */
+    outline: none; /* Quita el outline predeterminado */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra azul sutil */
+}
+
+.registro input[type="number"] {
+    /* Estilos específicos para el input de edad, si necesitas algo extra */
+    /* Por ejemplo, podrías agregar min/max en HTML, pero aquí solo estilos */
+}

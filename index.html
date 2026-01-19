@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom en javascript</title>
+    <style>
+        body{
+            background-color:antiquewhite;
+        }  
+        table{
+            width:100%;
+        }
+        .centrado{
+            text-align: center;
+        }
+        .submit{
+            background:#296374;
+            padding:5px;
+            border-radius:5px;
+            text-align: center;
+            color:white;
+            width:20%;
+            cursor:pointer;
+        }
+        .registro {
+            position: absolute;
+            z-index: 100;
+            top: 40px;
+            left: 50%; /* Mueve el borde izquierdo al 50% del ancho del contenedor */
+            transform: translateX(-50%); /* Desplaza el elemento hacia la izquierda en un 50% de su propio ancho, centrándolo */
+            /* Opcional: Agrega un ancho fijo si no lo tienes, para evitar que se expanda */
+            width: 400px; /* Ajusta según tu diseño; puedes quitarlo si usas max-width en otros estilos */
+            display:none;
+        }
+        .btn{
+            cursor: pointer;
+        }
+        .remove{
+            display:block !important;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div style="position:relative">
+        <h1>Web de pruebas</h1>
+        <main>
+            <nav>
+                <button class="btn">Crear usuarios</button>
+                
+                <form id="form">
+                    <label>Buscar</label>
+                    <input type="search" class="" placeholder="Ingresa lo que estas buscando!!">
+                </form>
+            </nav>
+            <h2 class="titulo">Empleados</h2>
+            
+            <div id="contenedor">
+                
+                <table border>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>edad</th>
+                            <th>Genero</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablebody">
+                        
+                    </tbody>
+                </table>
+            </div>
+            
+        </main>
+        
+        <form class="registro">
+            
+            <label>Nombre</label>
+            <input type="text" placeholder="Ingrese nombre" required id="nombre">
+            
+            <label>Apellido</label>
+            <input type="text" placeholder="Ingrese apellido" required id="apellido">
+            
+            <label>Edad</label>
+            <input type="number" placeholder="Ingrese edad" required id="edad">
+            
+            <label>genero</label>
+            <select id="genero">
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+                <option value="N">No binario</option>
+            </select>
+            <button class="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="styles.js"></script>
+    <script src="create.js"></script>
+    <script src="main.js"></script>
+    
+    
+</body>
+</html>
